@@ -11,6 +11,15 @@ export default defineConfig({
     ["import", { "libraryName": "antd-mobile", "libraryDirectory": "es", "style": "css" }]
   ],
   // extraPostCSSPlugins: [
+  //   postcssPx2vw({
+  //     viewportWidth: 750,
+  //     unitPrecision: 5,
+  //     viewportUnit: 'vw',
+  //     minPixelValue: 1,
+  //   }),
+  // ]
+
+  // extraPostCSSPlugins: [
   //   require('postcss-flexbugs-fixes'),
   //   require('postcss-px-to-viewport')({
   //     viewportWidth: 375, // 视窗的宽度，对应的是我们设计稿的宽度，一般是375

@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './index.less';
 import { Button, Radio, Accordion, List } from 'antd-mobile';
 
 const RadioItem = Radio.RadioItem;
@@ -10,7 +11,7 @@ export default (props: any) => {
   return (
     <div>
       <Button type="primary">primary</Button>
-      {/*<h1 className={styles.title}>Page index</h1>*/}
+      <h1 className={styles.title}>Page index</h1>
       {props.children}
       <br/>
       <Radio className="my-radio" onChange={e => console.log('checkbox', e)}>Agree</Radio>
