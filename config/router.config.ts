@@ -5,15 +5,15 @@ export default [
     component: '@/pages/index',
     routes: [
       {
-        path: '/login',
-        exact: true,
-        component: '@/pages/login',
-      },
-      {
         path: '/',
         exact: true,
         component: '@/layouts/index',
       },
     ]
+  },
+  {
+    path: '/login',
+    exact: true,
+    component: '@/pages/login',
   },
 ]
