@@ -3,6 +3,10 @@ type State = {
   counter: number
 }
 
+type Pay = {
+  payload: any
+}
+
 export default {
   namespace: 'puzzleCard',
   state: {
@@ -20,7 +24,7 @@ export default {
     counter: 100,
   },
   reducers: {
-    addNewCard(state:State, { payload: newCard }) {
+    addNewCard(state:State, { payload: newCard }: Pay) {
       const nextCounter = state.counter + 1;
       const newCardData = { ...newCard, id: nextCounter };
       const nextData = state.data.concat(newCardData)

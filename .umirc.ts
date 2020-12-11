@@ -6,5 +6,8 @@ export default defineConfig({
     type: 'none',
   },
   routes: pageRoute,
-  dva: {}
+  dva: {},
+  extraBabelPlugins: [
+    ["import", { "libraryName": "antd-mobile", "style": "css" }]
+  ]
 });

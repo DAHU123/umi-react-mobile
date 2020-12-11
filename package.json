@@ -22,6 +22,7 @@
   "dependencies": {
     "@umijs/preset-react": "^1.7.8",
     "@umijs/test": "^3.3.1",
+    "antd-mobile": "^2.3.4",
     "dva": "^2.4.1",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
@@ -29,5 +30,8 @@
     "react-dom": "^16.12.0",
     "umi": "^3.3.1",
     "yorkie": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.13.3"
   }
 }
