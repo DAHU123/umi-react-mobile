@@ -1,0 +1,16 @@
+.wrap-layout {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+  :global {
+    .content {
+      flex-grow: 1;
+    }
+    .bottom {
+      height: 65px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
