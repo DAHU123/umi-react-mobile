@@ -11,19 +11,21 @@ export default [
   },
   {
     path: '/layouts',
-    exact: true,
     component: '@/layouts/index',
     routes: [
+      {
+        path: '/',
+        redirect: '/home',
+      },
       {
         path: '/home',
         exact: true,
         component: '@/pages/home',
       },
-      {
-        path: '/my',
-        exact: true,
-        component: '@/pages/home',
-      },
     ]
+  },
+  {
+    path: '*',
+    component: '@/pages/404.tsx',
   },
 ]
