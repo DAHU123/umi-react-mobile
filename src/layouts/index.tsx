@@ -1,18 +1,19 @@
 import React from 'react';
 import styles from './index.less';
+import { Link } from 'umi';
 
-function Layout() {
+function Layout(props: any) {
   return (
     <div className={styles['wrap-layout']}>
       <div className='content'>
         Layout大布局对应的页面
-        content
+        {props.children}
       </div>
       <div className='bottom'>
-        <div>首页</div>
-        <div>内容</div>
-        <div>分享</div>
-        <div>我的</div>
+        <Link to='/home'>首页</Link>
+        <Link to='/home'>内容</Link>
+        <Link to='/home'>分享</Link>
+        <Link to='/home'>我的</Link>
       </div>
     </div>
   )

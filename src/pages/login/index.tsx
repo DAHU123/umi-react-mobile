@@ -41,7 +41,7 @@ function Login() {
       Toast.info('请完善表单内容')
       return
     }
-    history.push('/')
+    history.push('/layouts')
   }
 
   return (
