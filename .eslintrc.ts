@@ -7,5 +7,18 @@ module.exports = {
     'no-plusplus': 'off',
     'react/sort-comp': 'off',
     'no-unused-expressions': 'off',
+    'generator-star-spacing': 'off',
+    "object-curly-spacing": [
+      'error',
+      'always',
+      {
+        arraysInObjects: true,
+        objectsInObjects: false
+      }
+    ],
+    "array-bracket-spacing": ["error","never"],
+    "no-nested-ternary": 0,
+    // allow debugger during development
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   },
 }
